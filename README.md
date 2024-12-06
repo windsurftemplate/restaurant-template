@@ -1,5 +1,7 @@
 # Savory Restaurant Template
 
+
+
 A modern, responsive restaurant website template featuring a clean design, smooth animations, and essential features for a restaurant's online presence.
 
 ## Features
