@@ -104,14 +104,10 @@ Feel free to submit issues and enhancement requests!
 
 ## License
 
-This project is licensed under the MIT License - feel free to use it for your restaurant website.
+This project is licensed under the MIT License - feel free to use.
 
 ## Credits
 
 - Font Awesome for icons
 - Unsplash for demo images
 - Google Fonts for typography
-
-## Support
-
-For support or questions, please open an issue in the repository.
