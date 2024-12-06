@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory | Fine Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Savory</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="book-btn"><a href="#reservation">Book Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Savory</h1>
+                <p class="tagline">Where Every Flavor Tells a Story</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary">View Menu</a>
+                    <a href="#reservation" class="btn secondary">Reserve Table</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="specialties" class="specialties">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Specialties</h2>
+                    <p>Signature dishes crafted with passion</p>
+                </div>
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Specialty 1">
+                        </div>
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with herbs</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Specialty 2">
+                        </div>
+                        <h3>Prime Ribeye</h3>
+                        <p>28-day aged premium beef</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Specialty 3">
+                        </div>
+                        <h3>Lobster Risotto</h3>
+                        <p>Creamy arborio rice with fresh lobster</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Menu</h2>
+                    <p>Curated selection of finest dishes</p>
+                </div>
+                <div class="menu-categories">
+                    <button class="menu-category active" data-category="starters">Starters</button>
+                    <button class="menu-category" data-category="mains">Main Course</button>
+                    <button class="menu-category" data-category="desserts">Desserts</button>
+                    <button class="menu-category" data-category="drinks">Drinks</button>
+                </div>
+                <div class="menu-items">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2010, Savory has been serving exceptional cuisine in an elegant atmosphere. Our commitment to quality ingredients and innovative cooking techniques has made us a destination for food lovers.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-award"></i>
+                                <h3>Award Winning</h3>
+                                <p>Recognized for culinary excellence</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <h3>Fresh Ingredients</h3>
+                                <p>Locally sourced produce</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h3>Expert Chefs</h3>
+                                <p>Passionate culinary team</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurant Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Gallery</h2>
+                    <p>A visual taste of our offerings</p>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Gallery images will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation">
+            <div class="container">
+                <div class="reservation-content">
+                    <div class="reservation-form">
+                        <h2>Reserve a Table</h2>
+                        <form id="bookingForm">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" required placeholder="Phone Number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="time" id="time" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select id="guests" required>
+                                    <option value="">Number of Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5+ People</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn primary">Reserve Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Us</h2>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>123 Dining Street, Foodville, FC 12345</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@savoryrestaurant.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <!-- Replace with your actual map embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.9!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMCcwMC4wIk4gNzPCsDU0JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory</h3>
+                    <p>Experience fine dining at its best</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Savory Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
